@@ -6,8 +6,9 @@ const DB = "JobForm";
 const URL = "mongodb+srv://mansoor:mansoor123@cluster0.ybuuf.mongodb.net/test?authSource=admin&replicaSet=atlas-qox0hn-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true"
 require('dotenv').config();
 app.use(
-    cors
-        ({origin: "*"})
+    cors({
+        origin: "*",
+    })
        );
 app.use(express.json());
 
